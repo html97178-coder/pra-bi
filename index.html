@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Me desculpa, Bi 💙</title>
+
+<style>
+/* FUNDO */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(135deg, #ffb6c1, #ffd1dc);
+}
+
+/* CONTAINER DO TEXTO */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+/* TEXTO */
+h1 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+/* GRID DOS CARDS */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 16px;
+    margin-top: 40px;
+}
+
+/* CARD */
+.card {
+    position: relative;
+    height: 180px;
+    border-radius: 18px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ff758f, #ffb3c6);
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* ÍCONE */
+.card span {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+}
+
+/* IMAGEM */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* QUANDO CLICAR */
+.card.aberto span {
+    display: none;
+}
+
+.card.aberto img {
+    opacity: 1;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Me desculpa, Bi 💙</h1>
+
+<p>Bi, eu sei que eu erro muito e a gente teve uma longa semana de brigas e eu te aborreci bastante, mas quero te pedir desculpas mesmo que isso te cansa, obrigado por me fazer tentar ser um namorado melhor cada dia, uma pessoa melhor.</p> 
+
+<p>
+Eu nunca tive um motivo próprio pra querer ser uma pessoa melhor, era imaturo, eu achava que mudar não servia pra nada e que não ia fazer diferença nenhuma na minha vida ou na vida das pessoas que amo, mas aí apareceu você, uma verdadeira motivação pra me tornar alguém melhor, pra poder ter um dia cheio de trabalho e complicado e chegar em casa podendo ler um "eu te amo meu carrapatinho descabelado" ou um "tô muito orgulhosa de você mo, te amo muito"</p> 
+<p>Essas mensagens mexem com o meu coração de um jeito que eu me sinto incrível, uma pessoa que já venceu na vida, eu posso querer ser uma pessoa que no futuro quer ter bastante dinheiro e muitas pessoas falam que isso sim é vencer na vida e ser bem sucedido mas na verdade eu já tenho algo que muitas pessoas queriam ter, um amor que tá sempre do meu lado me apoiando, me enchendo de orgulho e felicidade, uma pessoa que me faz esforçar pra correr atrás dos meus sonhos, alguém que me motiva a ser alguém melhor obrigado por ser essa namorada incrível e me motivar a ser alguém melhor todos os dias.</p> 
+
+<p>Eu te amo minha princesa, minha vampirinha, amo você pra sempre❤️</p>
+
+<div class="cards">
+    <div class="card">
+        <span>🎁</span>
+        <img src="img/IMG_6676.jpg">
+    </div>
+    <div class="card">
+        <span>🎁</span>
+        <img src="img/IMG_6657.jpg">
+    </div>
+    <div class="card">
+        <span>🎁</span>
+        <img src="img/IMG_6606.jpg">
+    </div>
+    <div class="card">
+    <span>🎁</span>
+    <img src="img/IMG_7187.jpg">
+</div>
+
+<script>
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+        card.classList.add('aberto');
+    });
+});
+</script>
+
+</body>
+</html>
